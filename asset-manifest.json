@@ -1,28 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.61501159.chunk.css",
-    "main.js": "/static/js/main.e2f40acb.chunk.js",
-    "main.js.map": "/static/js/main.e2f40acb.chunk.js.map",
+    "main.css": "/static/css/main.c370dd57.chunk.css",
+    "main.js": "/static/js/main.484cd0a5.chunk.js",
+    "main.js.map": "/static/js/main.484cd0a5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c507fcb4.js",
     "runtime-main.js.map": "/static/js/runtime-main.c507fcb4.js.map",
     "static/css/2.b0bb7f2c.chunk.css": "/static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.da8b838b.chunk.js": "/static/js/2.da8b838b.chunk.js",
-    "static/js/2.da8b838b.chunk.js.map": "/static/js/2.da8b838b.chunk.js.map",
+    "static/js/2.c3e923c9.chunk.js": "/static/js/2.c3e923c9.chunk.js",
+    "static/js/2.c3e923c9.chunk.js.map": "/static/js/2.c3e923c9.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3d0ef4789d96ff3976a7d508490b5cb1.js": "/precache-manifest.3d0ef4789d96ff3976a7d508490b5cb1.js",
+    "precache-manifest.547667b61907cccbd766835a1502757c.js": "/precache-manifest.547667b61907cccbd766835a1502757c.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.b0bb7f2c.chunk.css.map": "/static/css/2.b0bb7f2c.chunk.css.map",
-    "static/css/main.61501159.chunk.css.map": "/static/css/main.61501159.chunk.css.map",
+    "static/css/main.c370dd57.chunk.css.map": "/static/css/main.c370dd57.chunk.css.map",
     "static/media/Arrow-down.svg": "/static/media/Arrow-down.421908e6.svg",
-    "static/media/GitHub_Logo.svg": "/static/media/GitHub_Logo.07883e93.svg",
-    "static/media/LinkedIn_Logo.svg": "/static/media/LinkedIn_Logo.64b20397.svg",
-    "static/media/Resume_Logo.svg": "/static/media/Resume_Logo.425fba80.svg"
+    "static/media/GitHubFill.svg": "/static/media/GitHubFill.3e5a8785.svg",
+    "static/media/GitHubOutline.svg": "/static/media/GitHubOutline.0d2e743a.svg",
+    "static/media/LinkedInFill.svg": "/static/media/LinkedInFill.56ba8689.svg",
+    "static/media/LinkedInOutline.svg": "/static/media/LinkedInOutline.4b761499.svg",
+    "static/media/ResumeFill.svg": "/static/media/ResumeFill.909f0dd8.svg",
+    "static/media/ResumeOutline.svg": "/static/media/ResumeOutline.d58a7a63.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c507fcb4.js",
     "static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.da8b838b.chunk.js",
-    "static/css/main.61501159.chunk.css",
-    "static/js/main.e2f40acb.chunk.js"
+    "static/js/2.c3e923c9.chunk.js",
+    "static/css/main.c370dd57.chunk.css",
+    "static/js/main.484cd0a5.chunk.js"
   ]
 }
