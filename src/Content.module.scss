@@ -25,7 +25,7 @@
     padding: 0;
 }
 
-.buttonRow {
+.flexRow {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -80,4 +80,39 @@
     padding: 0;
     text-align: center;
     font-size: 3.5vmin;
+}
+
+.projectPanel {
+    width: 40vmin;
+    margin: 0;
+    padding: 0;
+    box-shadow: inset 0px 0px 0px 1px $secondary-color,
+                $content-shadow-style;
+}
+.projectPanel img {
+    width: 100%;
+}
+.projectPanel h2 {
+    width: 100%;
+    height: 3vmin;
+    text-align: center;
+    font-size: 3vmin;
+    margin-top: 3vmin;
+    margin-bottom: 3vmin;
+    vertical-align: middle;
+}
+.projectPanel p {
+    font-size: 2vmin;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3vmin;
+}
+.projectPanelButton {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2vmin;
+    width: 90%;
+    height: 5vmin;
+    background-color: $primary-color;
 }

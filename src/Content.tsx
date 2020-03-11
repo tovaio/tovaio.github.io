@@ -9,6 +9,8 @@ import gitHubOutline from './GitHubOutline.svg';
 import resumeFill from './ResumeFill.svg';
 import resumeOutline from './ResumeOutline.svg';
 
+import riskystratsIcon from './riskystratsIcon.png';
+
 interface LogoButtonProps {
     fillSrc: string,
     outlineSrc: string,
@@ -21,7 +23,7 @@ const LogoButton: React.FC<LogoButtonProps> = props => {
         <div className={styles.logoButton}>
             <div>
                 <a href={props.href} target='_blank' rel='noopener noreferrer'>
-                    <img src={props.outlineSrc} alt='LinkedIn'/>
+                    <img src={props.outlineSrc} alt={props.label} />
                     <img src={props.fillSrc} alt='' />
                 </a>
             </div>
@@ -30,9 +32,9 @@ const LogoButton: React.FC<LogoButtonProps> = props => {
     )
 }
 
-const ButtonRow: React.FC = props => {
+const FlexRow: React.FC = props => {
     return (
-        <div className={styles.buttonRow}>
+        <div className={styles.flexRow}>
             {props.children}
         </div>
     )
@@ -67,10 +69,18 @@ const Line: React.FC = props => {
     );
 }
 
-const ProjectPanel: React.FC = props => {
+interface ProjectPanelProps {
+    imgSrc: string,
+    title: string
+}
+
+const ProjectPanel: React.FC<ProjectPanelProps> = props => {
     return (
         <div className={styles.projectPanel}>
-
+            <img src={props.imgSrc} alt={props.title}/>
+            <h2>- {props.title} -</h2>
+            <p>{props.children}</p>
+            <div className={styles.projectPanelButton}/>
         </div>
     )
 }
@@ -92,14 +102,38 @@ const Content: React.FC = () => {
                 </Line>
             </Section>
             <Section title='quick links'>
-                <ButtonRow>
-                    <LogoButton label='linkedin' fillSrc={linkedInFill} outlineSrc={linkedInOutline} href='https://www.linkedin.com/in/tommy-vadakumchery-6a4646185/'/>
-                    <LogoButton label='github' fillSrc={gitHubFill} outlineSrc={gitHubOutline} href='https://www.github.com/tovaio/'/>
-                    <LogoButton label='résumé' fillSrc={resumeFill} outlineSrc={resumeOutline} href='https://drive.google.com/file/d/1ysRZdrQAxO6yet8le-xgbWq2PV4MuDY9/view?usp=sharing'/>
-                </ButtonRow>
+                <FlexRow>
+                    <LogoButton
+                        label='linkedin'
+                        fillSrc={linkedInFill}
+                        outlineSrc={linkedInOutline}
+                        href='https://www.linkedin.com/in/tommy-vadakumchery-6a4646185/'
+                    />
+                    <LogoButton
+                        label='github'
+                        fillSrc={gitHubFill}
+                        outlineSrc={gitHubOutline}
+                        href='https://www.github.com/tovaio/'
+                    />
+                    <LogoButton
+                        label='résumé'
+                        fillSrc={resumeFill}
+                        outlineSrc={resumeOutline}
+                        href='https://drive.google.com/file/d/1ysRZdrQAxO6yet8le-xgbWq2PV4MuDY9/view?usp=sharing'
+                    />
+                </FlexRow>
             </Section>
             <Section title='projects'>
-
+                <FlexRow>
+                    <ProjectPanel
+                        imgSrc={riskystratsIcon}
+                        title="risky strats"
+                    >
+                        Real-time RTS game based on <a href='https://www.roblox.com/games/316264464/RISKY-STRATS'>this game</a> of the same name.
+                        <br/>
+                        Currently under development!
+                    </ProjectPanel>
+                </FlexRow>
             </Section>
         </div>
     );
