@@ -1,0 +1,91 @@
+@import 'base';
+
+.bannerBackground {
+    z-index: -2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+}  
+
+.bannerContainer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    width: 100vw;
+    height: 100vmin;
+}
+
+.banner img {
+    width: 4vw;
+    position: absolute;
+    left: 48vw;
+    top: 77vmin;
+    filter: invert(1) drop-shadow($shadow-style);
+    opacity: 0;
+    transition: opacity $button-transition-time, transform $button-transition-time;
+    transition-timing-function: ease-in, ease-in;
+}
+
+.banner img.on {
+    opacity: 1;
+    transform: translateY(-5vmin);
+    transition-timing-function: ease-out, ease-out;
+}
+
+.banner button {
+    font-family: $font-stack;
+    font-size: 3.5vmin;
+    font-weight: 700;
+    border-radius: 0;
+    padding: 1vh 2vw;
+    color: white;
+    border: solid 3px white;
+    background-color: transparent;
+    box-shadow: $shadow-style;
+    text-shadow: $shadow-style;
+    transition: border-color $button-transition-time, 
+                background-color $button-transition-time,
+                text-shadow $button-transition-time;
+}
+
+.banner button:hover {
+    border-color: $primary-color;
+    background-color: $primary-color;
+    text-shadow: none;
+}
+
+.banner button:focus {
+    outline:0;
+}
+
+.banner h1 {
+    color: white;
+    font-family: $font-stack;
+    font-size: 5vmin;
+    text-align: center;
+    text-shadow: $shadow-style;
+    margin: 0;
+    margin-bottom: 6.5vmin;
+}
+
+.banner span {
+    background-color: $primary-color;
+    color: white;
+    text-shadow: none;
+    box-shadow: $shadow-style;
+    font-weight: 700;
+}

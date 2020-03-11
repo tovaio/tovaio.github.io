@@ -1,0 +1,25 @@
+@import 'base';
+
+.container {
+    display: grid;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    top: -1vw;
+    left: -1vw;
+}
+
+.cell {
+    place-self: center;
+    width: 66.6%;
+    height: 66.6%;
+    background-color: #353943;
+    box-shadow: none;
+}
+
+.on {
+    background-color: #664d78;
+    box-shadow: 0 0px 6px #181a21;
+}
+

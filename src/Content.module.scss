@@ -1,0 +1,83 @@
+@import 'base';
+
+.content {
+    font-family: $font-stack;
+    font-size: 3vmin;
+    background-color: white;
+    color: $background-color;
+    width: 100%;
+    margin: 0;
+    padding: 5vmin 5vmax;
+    z-index: 2;
+}
+
+.content h1 {
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5vmin;
+    font-size: 5vmin;
+}
+
+.section {
+    margin: 0;
+    margin-bottom: 5vmin;
+    padding: 0;
+}
+
+.buttonRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.logoButton {
+    width: 20vmin;
+    height: 28vmin;
+    margin: 0;
+    padding: 0;
+}
+
+.logoButton div {
+    width: 100%;
+    height: 71.43%;
+    margin: 0;
+    padding: 0;
+}
+
+.logoButton div a img {
+    width: 100%;
+    height: 100%;
+}
+
+.logoButton div a img:nth-child(1) {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(18%) saturate(321%) hue-rotate(187deg) brightness(90%) contrast(86%);
+    transition: filter 0.2s;
+}
+.logoButton div a img:nth-child(1):hover {
+    filter: brightness(0) saturate(100%) invert(48%) sepia(33%) saturate(933%) hue-rotate(231deg) brightness(86%) contrast(85%);
+}
+
+.logoButton div a img:nth-child(2) {
+    filter: brightness(0) saturate(100%) invert(48%) sepia(33%) saturate(933%) hue-rotate(231deg) brightness(86%) contrast(85%);
+    position: relative;
+    top: -100%;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.logoButton div a img:nth-child(2):hover {
+    opacity: 1;
+}
+
+.logoButton p {
+    width: 100%;
+    height: 15%;
+    margin: 0;
+    margin-top: 13.57%;
+    padding: 0;
+    text-align: center;
+    font-size: 3.5vmin;
+}

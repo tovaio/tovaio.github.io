@@ -1,0 +1,58 @@
+{
+  "name": "tovaio.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/classnames": "^2.2.9",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.8",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "bootstrap": "^4.3.1",
+    "classnames": "^2.2.6",
+    "dart-sass": "^1.23.6",
+    "immer": "^5.0.0",
+    "jquery": "^3.4.1",
+    "node-sass": "npm:sass",
+    "popper.js": "^1.16.0",
+    "react": "^16.11.0",
+    "react-bootstrap": "^1.0.0-beta.15",
+    "react-device-detect": "^1.9.10",
+    "react-dom": "^16.11.0",
+    "react-scripts": "3.2.0",
+    "react-scroll-parallax": "^2.2.0",
+    "typescript": "^3.7.2"
+  },
+  "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": "https://tovaio.github.io",
+  "devDependencies": {
+    "@types/jquery": "^3.3.31",
+    "gh-pages": "^2.1.1"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/tovaio/tovaio.github.io",
+  "author": "Tommy Vadakumchery <t.vadakumchery1@gmail.com>",
+  "license": "MIT"
+}
