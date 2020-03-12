@@ -161,7 +161,7 @@ const Content: React.FC = () => {
                     >
                         Project for Vandy Hacks VI: Art Edition (2019, Vanderbilt University).
                         <br/><br/>
-                        <em>Won "Best Use of MongoDB: Atlas" (MLH Sponsored Prize)</em>
+                        <em>Won "Best Use of MongoDB Atlas" (MLH Sponsored Prize)</em>
                     </ProjectPanel>
                     <ProjectPanel
                         imgSrc={fourRealIcon}
