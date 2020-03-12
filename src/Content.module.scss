@@ -21,12 +21,13 @@
 
 .section {
     margin: 0;
-    margin-bottom: 5vmin;
+    margin-bottom: 7vmin;
     padding: 0;
 }
 
 .flexRow {
     display: flex;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 0;
@@ -88,6 +89,7 @@
     padding: 0;
     box-shadow: inset 0px 0px 0px 1px $secondary-color,
                 $content-shadow-style;
+    margin-bottom: 3vmin;
 }
 .projectPanel img {
     width: 100%;
@@ -113,6 +115,16 @@
     margin-right: 5%;
     margin-bottom: 2vmin;
     width: 90%;
-    height: 5vmin;
+    height: 5.5vmin;
+    border: solid 3px $secondary-color;
+    transition: border-color 0.2s, background-color 0.2s;
+    color: $secondary-color;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 3vmin;
+}
+.projectPanelButton:hover {
+    border-color: $primary-color;
     background-color: $primary-color;
+    color: white;
 }

@@ -10,6 +10,9 @@ import resumeFill from './ResumeFill.svg';
 import resumeOutline from './ResumeOutline.svg';
 
 import riskystratsIcon from './riskystratsIcon.png';
+import socialSavageIcon from './SocialSavageIcon.png';
+import fourRealIcon from './4RealIcon.png';
+import dmtCertificate from './DMTCertificate.jpg';
 
 interface LogoButtonProps {
     fillSrc: string,
@@ -71,7 +74,8 @@ const Line: React.FC = props => {
 
 interface ProjectPanelProps {
     imgSrc: string,
-    title: string
+    title: string,
+    links: [string, string][]
 }
 
 const ProjectPanel: React.FC<ProjectPanelProps> = props => {
@@ -80,7 +84,16 @@ const ProjectPanel: React.FC<ProjectPanelProps> = props => {
             <img src={props.imgSrc} alt={props.title}/>
             <h2>- {props.title} -</h2>
             <p>{props.children}</p>
-            <div className={styles.projectPanelButton}/>
+            {
+                props.links.map(([url, label]) => (
+                    <a href={url} style={{color: 'white', textDecoration: 'none'}} target='_blank' rel='noopener noreferrer'>
+                        <div className={styles.projectPanelButton}>
+                            {label}
+                        </div>
+                    </a>
+                ))
+            }
+            
         </div>
     )
 }
@@ -128,10 +141,39 @@ const Content: React.FC = () => {
                     <ProjectPanel
                         imgSrc={riskystratsIcon}
                         title="risky strats"
+                        links={[
+                            ["https://tovaio.github.io/riskystrats", "play online!"],
+                            ["https://github.com/tovaio/riskystrats", "client repo"],
+                            ["https://github.com/tovaio/riskystrats-server", "server repo"]
+                        ]}
                     >
-                        Real-time RTS game based on <a href='https://www.roblox.com/games/316264464/RISKY-STRATS'>this game</a> of the same name.
-                        <br/>
-                        Currently under development!
+                        Real-time strategy game based on <a href='https://www.roblox.com/games/316264464/RISKY-STRATS'>this game</a> of the same name.
+                        <br/><br/>
+                        <em>Currently under development!</em>
+                    </ProjectPanel>
+                    <ProjectPanel
+                        imgSrc={socialSavageIcon}
+                        title="Social Savage"
+                        links={[
+                            ["https://github.com/tovaio/social-savage", "github repo"],
+                            ["https://devpost.com/software/socialsavage", "devpost"]
+                        ]}
+                    >
+                        Project for Vandy Hacks VI: Art Edition (2019, Vanderbilt University).
+                        <br/><br/>
+                        <em>Won "Best Use of MongoDB: Atlas" (MLH Sponsored Prize)</em>
+                    </ProjectPanel>
+                    <ProjectPanel
+                        imgSrc={fourRealIcon}
+                        title="4Real"
+                        links={[
+                            ["https://github.com/nexen01/DareMightyThings2019", "github repo"],
+                            [dmtCertificate, "certificate"]
+                        ]}
+                    >
+                        Project for Dare Mighty Things Hackathon (2019, Chicago).
+                        <br/><br/>
+                        <em>Won "Best of Show" and "Best Natural Language Processing Project" (JLL Sponsored Prize)</em>
                     </ProjectPanel>
                 </FlexRow>
             </Section>
