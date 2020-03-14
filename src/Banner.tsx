@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { isMobile } from 'react-device-detect';
 
 import GameOfLife from './GameOfLife';
@@ -15,20 +15,22 @@ const HighlightSpan: React.FC = props => {
 }
 
 const Banner: React.FC = () => {
-    const [ scrollTop, setScrollTop ] = useState(document.body.scrollTop);
+    //const [ scrollTop, setScrollTop ] = useState(document.body.scrollTop);
     const [ isHovering, setIsHovering ] = useState(false);
-    const scrollEventRef = useRef(false);
-    const debounceRef = useRef(false);
+    //const scrollEventRef = useRef(false);
+    //const debounceRef = useRef(false);
 
+    /*
     if (!(scrollEventRef.current)) {
         document.body.onscroll = () => {
             if (debounceRef.current && document.documentElement.scrollTop !== 0) return;
             debounceRef.current = true;
-            setScrollTop(Math.min(document.documentElement.scrollTop/50, 10));
+            setScrollTop(Math.ceil(document.documentElement.scrollTop / 1000) * 10);
             setTimeout(() => {debounceRef.current = false}, 100);
         }
         scrollEventRef.current = true;
     }
+    */
 
     const golDim = isMobile ? 15 : 30;
 
@@ -45,7 +47,7 @@ const Banner: React.FC = () => {
             </div>
             <div
                 className={styles.bannerContainer}
-                style={{ backdropFilter: isMobile ? 'none' : `blur(${scrollTop}px)` }}
+                //style={{ backdropFilter: isMobile ? 'none' : `blur(${scrollTop}px)` }}
             >
                 <h1>
                     hi, i'm <HighlightSpan>to</HighlightSpan>mmy <HighlightSpan>va</HighlightSpan>dakumchery! <br/>

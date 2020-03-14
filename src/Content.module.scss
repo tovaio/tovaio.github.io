@@ -87,7 +87,7 @@
     width: 40vmin;
     margin: 0;
     padding: 0;
-    box-shadow: inset 0px 0px 0px 1px $secondary-color,
+    box-shadow: inset 0px 0px 0px 0.1vmin $secondary-color,
                 $content-shadow-style;
     margin-bottom: 3vmin;
 }
@@ -116,7 +116,7 @@
     margin-bottom: 2vmin;
     width: 90%;
     height: 5.5vmin;
-    border: solid 3px $secondary-color;
+    border: solid 0.25vmin $secondary-color;
     transition: border-color 0.2s, background-color 0.2s;
     color: $secondary-color;
     text-align: center;

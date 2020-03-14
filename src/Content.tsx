@@ -12,6 +12,7 @@ import resumeOutline from './ResumeOutline.svg';
 import riskystratsIcon from './riskystratsIcon.png';
 import socialSavageIcon from './SocialSavageIcon.png';
 import fourRealIcon from './4RealIcon.png';
+import himcmIcon from './HIMCMIcon.png';
 import dmtCertificate from './DMTCertificate.jpg';
 
 interface LogoButtonProps {
@@ -143,8 +144,8 @@ const Content: React.FC = () => {
                         title="risky strats"
                         links={[
                             ["https://tovaio.github.io/riskystrats", "play online!"],
-                            ["https://github.com/tovaio/riskystrats", "client repo"],
-                            ["https://github.com/tovaio/riskystrats-server", "server repo"]
+                            ["https://github.com/tovaio/riskystrats", "github (client)"],
+                            ["https://github.com/tovaio/riskystrats-server", "github (server)"]
                         ]}
                     >
                         Real-time strategy game based on <a href='https://www.roblox.com/games/316264464/RISKY-STRATS'>this game</a> of the same name.
@@ -155,7 +156,7 @@ const Content: React.FC = () => {
                         imgSrc={socialSavageIcon}
                         title="Social Savage"
                         links={[
-                            ["https://github.com/tovaio/social-savage", "github repo"],
+                            ["https://github.com/tovaio/social-savage", "github"],
                             ["https://devpost.com/software/socialsavage", "devpost"]
                         ]}
                     >
@@ -167,13 +168,25 @@ const Content: React.FC = () => {
                         imgSrc={fourRealIcon}
                         title="4Real"
                         links={[
-                            ["https://github.com/nexen01/DareMightyThings2019", "github repo"],
+                            ["https://github.com/nexen01/DareMightyThings2019", "github"],
                             [dmtCertificate, "certificate"]
                         ]}
                     >
                         Project for Dare Mighty Things Hackathon (2019, Chicago).
                         <br/><br/>
                         <em>Won "Best of Show" and "Best Natural Language Processing Project" (JLL Sponsored Prize)</em>
+                    </ProjectPanel>
+                    <ProjectPanel
+                        imgSrc={himcmIcon}
+                        title="Warehouse Model"
+                        links={[
+                            ["https://digitalcommons.imsa.edu/math_sw/5/", "read paper"],
+                            ["http://www.comap-math.com/himcm/2016Certs/7211.pdf", "certificate"]
+                        ]}
+                    >
+                        Paper submitted for the 2016 High School Mathematical Contest in Modelling.
+                        <br/><br/>
+                        <em>Won "Outstanding" designation (Top 9 out of 840 teams in the US and China)</em>
                     </ProjectPanel>
                 </FlexRow>
             </Section>
