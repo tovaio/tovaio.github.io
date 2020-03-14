@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.650f257a.chunk.css",
-    "main.js": "/static/js/main.60eef62c.chunk.js",
-    "main.js.map": "/static/js/main.60eef62c.chunk.js.map",
+    "main.css": "/static/css/main.0511fd7c.chunk.css",
+    "main.js": "/static/js/main.541d7f82.chunk.js",
+    "main.js.map": "/static/js/main.541d7f82.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c507fcb4.js",
     "runtime-main.js.map": "/static/js/runtime-main.c507fcb4.js.map",
     "static/css/2.b0bb7f2c.chunk.css": "/static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.8b5fd224.chunk.js": "/static/js/2.8b5fd224.chunk.js",
-    "static/js/2.8b5fd224.chunk.js.map": "/static/js/2.8b5fd224.chunk.js.map",
+    "static/js/2.4f625b7f.chunk.js": "/static/js/2.4f625b7f.chunk.js",
+    "static/js/2.4f625b7f.chunk.js.map": "/static/js/2.4f625b7f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.35dbc4e0b820acb87d96acecc872e77e.js": "/precache-manifest.35dbc4e0b820acb87d96acecc872e77e.js",
+    "precache-manifest.c1dfef3e3e77a99a0c94cf0c7279a4fd.js": "/precache-manifest.c1dfef3e3e77a99a0c94cf0c7279a4fd.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.b0bb7f2c.chunk.css.map": "/static/css/2.b0bb7f2c.chunk.css.map",
-    "static/css/main.650f257a.chunk.css.map": "/static/css/main.650f257a.chunk.css.map",
+    "static/css/main.0511fd7c.chunk.css.map": "/static/css/main.0511fd7c.chunk.css.map",
     "static/media/4RealIcon.png": "/static/media/4RealIcon.74e3529f.png",
     "static/media/Arrow-down.svg": "/static/media/Arrow-down.421908e6.svg",
     "static/media/DMTCertificate.jpg": "/static/media/DMTCertificate.6ef0986e.jpg",
     "static/media/GitHubFill.svg": "/static/media/GitHubFill.3e5a8785.svg",
     "static/media/GitHubOutline.svg": "/static/media/GitHubOutline.0d2e743a.svg",
+    "static/media/HIMCMIcon.png": "/static/media/HIMCMIcon.c961d09e.png",
     "static/media/LinkedInFill.svg": "/static/media/LinkedInFill.56ba8689.svg",
     "static/media/LinkedInOutline.svg": "/static/media/LinkedInOutline.4b761499.svg",
     "static/media/ResumeFill.svg": "/static/media/ResumeFill.909f0dd8.svg",
@@ -28,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.c507fcb4.js",
     "static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.8b5fd224.chunk.js",
-    "static/css/main.650f257a.chunk.css",
-    "static/js/main.60eef62c.chunk.js"
+    "static/js/2.4f625b7f.chunk.js",
+    "static/css/main.0511fd7c.chunk.css",
+    "static/js/main.541d7f82.chunk.js"
   ]
 }
