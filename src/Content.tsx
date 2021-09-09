@@ -133,7 +133,7 @@ const Content: React.FC = () => {
                         label='résumé'
                         fillSrc={resumeFill}
                         outlineSrc={resumeOutline}
-                        href='https://drive.google.com/file/d/1aQAMy8n-rZ2wCnqiwWCr64QNu6xuT3DV/view?usp=sharing'
+                        href='https://drive.google.com/file/d/1Y7BICg5WEAkP4yulRfcJJnKhidBYj1ii/view?usp=sharing'
                     />
                 </FlexRow>
             </Section>
