@@ -111,7 +111,7 @@ const Content: React.FC = () => {
                     during my free time, i like to work on interesting coding projects! this site serves as a hub for these projects.
                 </Line>
                 <Line>
-                    (if you are wondering, the pattern in the background above is a simulation of Conway's Game of Life.
+                    (if you're wondering, the pattern in the background above is a simulation of Conway's Game of Life.
                     it sporadically spawns new gliders, causing absolute chaos!)
                 </Line>
             </Section>
